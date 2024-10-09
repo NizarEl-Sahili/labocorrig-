@@ -1,0 +1,7 @@
+<h4>Pokémon recherché 🕵️‍♀️</h4>
+<div *ngIf="pokemonDetail">
+  <p>{{pokemonDetail.id}}</p>
+  <p>Nom : {{pokemonDetail.name}}</p>
+  <img [src]="pokemonDetail.imgSrc" [alt]="pokemonDetail.name">
+  <button (click)="AddtoFavorites()" class="favorite">+⭐</button>
+</div>

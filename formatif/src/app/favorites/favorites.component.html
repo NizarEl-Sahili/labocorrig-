@@ -1,0 +1,11 @@
+<h4>Mes Pokémons favoris ⭐</h4>
+
+<div class="row text-center">
+
+  <div *ngFor="let n of favorites" class="col-2 pkmn">
+    <h5>{{n.id}}</h5>
+    <p>Nom : {{n.name}}</p>
+    <img class="img-fluid" [src]="n.imgSrc" [alt]="n.name">
+  </div>
+
+</div>
